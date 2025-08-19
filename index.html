@@ -1,33 +1,181 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Politique de confidentialité - NutriScap</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Politique de confidentialité – NutriScap</title>
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#f7f8fa;
+      --card:#ffffff;
+      --text:#2b2f36;
+      --muted:#6b7280;
+      --primary:#2563eb;
+      --ring:#c7d2fe;
+      --radius:16px;
+      --shadow:0 10px 25px rgba(0,0,0,.06);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0f172a;
+        --card:#111827;
+        --text:#e5e7eb;
+        --muted:#9ca3af;
+        --primary:#60a5fa;
+        --ring:#1e3a8a;
+        --shadow:0 10px 25px rgba(0,0,0,.25);
+      }
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
+      background: radial-gradient(1200px 600px at 50% -10%, rgba(37,99,235,.08), transparent 60%) , var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    .container{
+      max-width: 860px;
+      margin: clamp(16px,4vw,48px) auto;
+      padding: clamp(16px,3vw,32px);
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding: clamp(20px,3.5vw,48px);
+      border: 1px solid rgba(99,102,241,.08);
+    }
+
+    header{
+      text-align:center;
+      margin-bottom: 20px;
+    }
+    h1{
+      font-size: clamp(24px, 2.8vw, 36px);
+      line-height:1.2;
+      margin:0 0 8px 0;
+    }
+    .meta{
+      color:var(--muted);
+      font-size: .95rem;
+    }
+
+    nav{
+      display:flex; gap:.75rem; flex-wrap:wrap;
+      margin: 18px 0 28px 0;
+    }
+    nav a{
+      text-decoration:none; color:var(--primary);
+      background: color-mix(in srgb, var(--primary) 10%, transparent);
+      padding: .45rem .7rem;
+      border-radius: 999px;
+      border: 1px solid color-mix(in srgb, var(--primary) 22%, transparent);
+    }
+    nav a:hover{
+      box-shadow:0 0 0 6px var(--ring);
+    }
+
+    h2{
+      font-size: clamp(18px, 2.2vw, 24px);
+      margin: 26px 0 12px;
+      border-left: 4px solid var(--primary);
+      padding-left: .6rem;
+    }
+    p, li{font-size: 1.02rem}
+    ul{padding-left: 1.15rem}
+
+    .note{
+      background: color-mix(in srgb, var(--primary) 8%, transparent);
+      border:1px solid color-mix(in srgb, var(--primary) 22%, transparent);
+      padding: .9rem 1rem;
+      border-radius: 12px;
+      margin: 12px 0 4px;
+    }
+    a{ color: var(--primary) }
+
+    footer{
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top:1px dashed color-mix(in srgb, var(--muted) 30%, transparent);
+      color:var(--muted);
+      font-size:.95rem;
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    }
+    .brand{font-weight:600; color:var(--primary)}
+  </style>
 </head>
 <body>
-  <h1>Politique de confidentialité – NutriScap</h1>
-  <p>Dernière mise à jour : 19 août 2025</p>
+  <div class="container">
+    <div class="card">
+      <header>
+        <h1>Politique de confidentialité – NutriScap</h1>
+        <div class="meta">Dernière mise à jour : <time datetime="2025-08-19">19 août 2025</time></div>
+      </header>
 
-  <h2>1. Données collectées</h2>
-  <p>Nous collectons des données techniques (type d’appareil, identifiant publicitaire), 
-  des données d’utilisation (produits scannés, recherches, interactions), 
-  ainsi que les informations fournies volontairement (compte, avis, commentaires).
-  Nous utilisons également des données provenant de tiers : Open Food Facts et RappelConso (DGCCRF).</p>
+      <nav>
+        <a href="#donnees">Données collectées</a>
+        <a href="#utilisation">Utilisation</a>
+        <a href="#partage">Partage</a>
+        <a href="#droits">Vos droits</a>
+        <a href="#securite">Sécurité</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-  <h2>2. Utilisation des données</h2>
-  <ul>
-    <li>Afficher les informations nutritionnelles et rappels produits</li>
-    <li>Améliorer l’expérience utilisateur</li>
-    <li>Afficher des publicités (Google AdMob)</li>
-    <li>Permettre les avis/commentaires</li>
-  </ul>
+      <section id="donnees">
+        <h2>1. Données collectées</h2>
+        <p>Nous collectons les données suivantes :</p>
+        <ul>
+          <li><strong>Données techniques</strong> : type d’appareil, version, identifiant publicitaire.</li>
+          <li><strong>Données d’utilisation</strong> : produits scannés, recherches, interactions.</li>
+          <li><strong>Données fournies volontairement</strong> : e-mail (si compte), pseudo, notes et commentaires.</li>
+          <li><strong>Données tierces</strong> : Open Food Facts et RappelConso (DGCCRF).</li>
+        </ul>
+        <p class="note">Certaines fonctionnalités (publicité, analytics) s’appuient sur des services tiers susceptibles de déposer des identifiants techniques.</p>
+      </section>
 
-  <h2>3. Partage des données</h2>
-  <p>Vos données ne sont jamais revendues. Elles peuvent être partagées avec des 
-  fournisseurs techniques ou autorités légales si nécessaire.</p>
+      <section id="utilisation">
+        <h2>2. Utilisation des données</h2>
+        <ul>
+          <li>Afficher les informations nutritionnelles, rappels produits et estimations de prix.</li>
+          <li>Améliorer l’expérience utilisateur.</li>
+          <li>Afficher des publicités (Google AdMob) et mesurer l’audience.</li>
+          <li>Permettre la création de comptes, les avis et la modération.</li>
+        </ul>
+      </section>
 
-  <h2>4. Vos droits</h2>
-  <p>Vous pouvez exercer vos droits (accès, rectification, suppression) en nous contactant : 
-  <a href="mailto:tonemail@gmail.com">tonemail@gmail.com</a>.</p>
+      <section id="partage">
+        <h2>3. Partage des données</h2>
+        <p>Vos données ne sont jamais revendues. Elles peuvent être partagées avec des prestataires techniques (hébergement, analytics, publicité) ou avec des autorités légales si la loi l’exige.</p>
+      </section>
+
+      <section id="droits">
+        <h2>4. Vos droits (RGPD)</h2>
+        <p>Vous pouvez exercer vos droits d’accès, de rectification, de suppression, d’opposition et de portabilité en nous écrivant à :  
+          <a href="mailto:nutriscap.app@gmail.com">nutriscap.app@gmail.com</a>.  
+          Nous répondrons dans les délais légaux.</p>
+      </section>
+
+      <section id="securite">
+        <h2>5. Sécurité & conservation</h2>
+        <p>Nous appliquons des mesures raisonnables de sécurité. Les données sont conservées uniquement le temps nécessaire ou jusqu’à la suppression de votre compte.</p>
+      </section>
+
+      <section id="contact">
+        <h2>6. Contact</h2>
+        <p>Pour toute question relative à cette politique :  
+          <a href="mailto:nutriscap.app@gmail.com">nutriscap.app@gmail.com</a></p>
+      </section>
+
+      <footer>
+        <div>© 2025 <span class="brand">NutriScap</span></div>
+        <div>Sources : Open Food Facts (ODbL) & RappelConso (DGCCRF)</div>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
