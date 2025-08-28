@@ -1,65 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Suppression de compte – NutriScap</title>
-  <meta name="color-scheme" content="light dark" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 860px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #f7f8fa;
-      color: #2b2f36;
-      line-height: 1.6;
-    }
-    h1 {
-      text-align: center;
-      color: #2563eb;
-    }
-    h2 {
-      margin-top: 24px;
-      color: #2c3e50;
-      border-left: 4px solid #2563eb;
-      padding-left: .6rem;
-    }
-    p {
-      font-size: 1.05rem;
-    }
-    a {
-      color: #2563eb;
-      font-weight: bold;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      text-align: center;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-  <h1>Suppression de compte – NutriScap</h1>
-  <p><strong>Dernière mise à jour :</strong> 19 août 2025</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Suppression de compte – NutriScap</title>
+        <meta name="color-scheme" content="light dark" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <nav class="topnav" aria-label="Navigation principale">
+            <div class="container-nav">
+                <div class="brand">
+                    <a href="/" class="brand-link">
+                        <img
+                            src="assets/img/icon.png"
+                            alt="NutriScap"
+                            class="brand-icon"
+                        />
+                    </a>
+                    <button
+                        class="nav-toggle"
+                        type="button"
+                        aria-label="Ouvrir le menu"
+                        aria-expanded="false"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-menu-icon lucide-menu"
+                        >
+                            <path d="M4 12h16" />
+                            <path d="M4 18h16" />
+                            <path d="M4 6h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="nav-links">
+                    <a href="/">Politique de confidentialité</a>
+                    <a
+                        href="delete-account.html"
+                        class="active"
+                        aria-current="page"
+                        >Suppression de compte</a
+                    >
+                </div>
+            </div>
+        </nav>
 
-  <h2>Comment demander la suppression de votre compte ?</h2>
-  <p>Conformément au RGPD, vous pouvez demander à tout moment la suppression définitive de votre compte et de vos données personnelles associées.</p>
+        <div class="container">
+            <div class="card">
+                <h1>Suppression de compte – NutriScap</h1>
+                <div class="meta">Dernière mise à jour : 19 août 2025</div>
 
-  <p>Pour cela, il vous suffit de cliquer sur le lien ci-dessous :</p>
+                <h2>Comment demander la suppression de votre compte ?</h2>
+                <p>
+                    Conformément au RGPD, vous pouvez demander à tout moment la
+                    suppression définitive de votre compte et de vos données
+                    personnelles associées.
+                </p>
 
-  <p>
-    <a href="mailto:nutriscap.app@gmail.com?subject=Demande%20de%20suppression%20de%20compte%20NutriScap&body=Bonjour,%0D%0A%0D%0AJe souhaite demander la suppression définitive de mon compte NutriScap associé à cette adresse e-mail.%0D%0A%0D%0AMerci de confirmer la suppression.%0D%0A%0D%0A--%0DSignature">
-      📩 Envoyer une demande de suppression
-    </a>
-  </p>
+                <p>Pour lancer la procédure, utilisez le bouton ci-dessous :</p>
+                <p>
+                    <a
+                        class="btn"
+                        role="button"
+                        aria-label="Envoyer une demande de suppression par e-mail"
+                        href="mailto:nutriscap.app@gmail.com?subject=Demande%20de%20suppression%20de%20compte%20NutriScap&body=Bonjour,%0D%0A%0D%0AJe souhaite demander la suppression définitive de mon compte NutriScap associé à cette adresse e-mail.%0D%0A%0D%0AMerci de confirmer la suppression.%0D%0A%0D%0A--%0DSignature"
+                    >
+                        <span class="icon">📩</span>
+                        Envoyer ma demande de suppression
+                    </a>
+                </p>
 
-  <h2>Délais de traitement</h2>
-  <p>Votre demande sera traitée dans un délai maximum de <strong>30 jours</strong>. Une confirmation de suppression vous sera envoyée par e-mail.</p>
+                <div class="note" role="status">
+                    <strong>Infos utiles :</strong> vous recevrez un accusé de
+                    réception automatique. Si vous avez un pseudonyme différent
+                    de votre e-mail, vous pouvez l’indiquer dans le message pour
+                    accélérer le traitement.
+                </div>
 
-  <footer>
-    © 2025 NutriScap – Suppression de compte
-  </footer>
-</body>
+                <h2>Délais de traitement</h2>
+                <p>
+                    Votre demande sera traitée dans un délai maximum de
+                    <strong>30 jours</strong>. Une confirmation de suppression
+                    vous sera envoyée par e-mail.
+                </p>
+
+                <footer>© 2025 NutriScap – Suppression de compte</footer>
+            </div>
+        </div>
+
+        <script defer src="assets/js/main.js"></script>
+    </body>
 </html>
