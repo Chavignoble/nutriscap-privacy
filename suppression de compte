@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suppression de compte – NutriScap</title>
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f7f8fa;
+      color: #2b2f36;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #2563eb;
+    }
+    h2 {
+      margin-top: 24px;
+      color: #2c3e50;
+      border-left: 4px solid #2563eb;
+      padding-left: .6rem;
+    }
+    p {
+      font-size: 1.05rem;
+    }
+    a {
+      color: #2563eb;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Suppression de compte – NutriScap</h1>
+  <p><strong>Dernière mise à jour :</strong> 19 août 2025</p>
+
+  <h2>Comment demander la suppression de votre compte ?</h2>
+  <p>Conformément au RGPD, vous pouvez demander à tout moment la suppression définitive de votre compte et de vos données personnelles associées.</p>
+
+  <p>Pour cela, il vous suffit de cliquer sur le lien ci-dessous :</p>
+
+  <p>
+    <a href="mailto:nutriscap.app@gmail.com?subject=Demande%20de%20suppression%20de%20compte%20NutriScap&body=Bonjour,%0D%0A%0D%0AJe souhaite demander la suppression définitive de mon compte NutriScap associé à cette adresse e-mail.%0D%0A%0D%0AMerci de confirmer la suppression.%0D%0A%0D%0A--%0DSignature">
+      📩 Envoyer une demande de suppression
+    </a>
+  </p>
+
+  <h2>Délais de traitement</h2>
+  <p>Votre demande sera traitée dans un délai maximum de <strong>30 jours</strong>. Une confirmation de suppression vous sera envoyée par e-mail.</p>
+
+  <footer>
+    © 2025 NutriScap – Suppression de compte
+  </footer>
+</body>
+</html>
