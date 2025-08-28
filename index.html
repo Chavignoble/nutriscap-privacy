@@ -26,13 +26,13 @@
     }
     h1 {
       text-align: center;
-      color: #2e7d32; /* vert soutenu */
+      color: #2e7d32;
       margin-bottom: 10px;
     }
     h2 {
       margin-top: 24px;
-      color: #388e3c; /* vert moyen */
-      border-left: 4px solid #81c784; /* vert pastel */
+      color: #388e3c;
+      border-left: 4px solid #81c784;
       padding-left: 10px;
     }
     p, li {
@@ -62,6 +62,24 @@
       color: #666;
       margin-bottom: 20px;
     }
+    .sommaire {
+      background: #f1f8f4;
+      border: 1px solid #c8e6c9;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 25px;
+    }
+    .sommaire h3 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+    .sommaire ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .sommaire li {
+      margin: 5px 0;
+    }
   </style>
 </head>
 <body>
@@ -70,7 +88,21 @@
       <h1>Politique de confidentialité – NutriScap</h1>
       <div class="meta">Dernière mise à jour : 19 août 2025</div>
 
-      <h2>1. Données collectées</h2>
+      <!-- Sommaire -->
+      <div class="sommaire">
+        <h3>📑 Sommaire</h3>
+        <ul>
+          <li><a href="#collecte">1. Données collectées</a></li>
+          <li><a href="#utilisation">2. Utilisation des données</a></li>
+          <li><a href="#partage">3. Partage des données</a></li>
+          <li><a href="#droits">4. Vos droits (RGPD)</a></li>
+          <li><a href="#securite">5. Sécurité et conservation</a></li>
+          <li><a href="#contact">6. Contact</a></li>
+          <li><a href="#acceptation">7. Acceptation de la politique</a></li>
+        </ul>
+      </div>
+
+      <h2 id="collecte">1. Données collectées</h2>
       <p>Nous collectons les données suivantes :</p>
       <ul>
         <li><strong>Données techniques</strong> : type d’appareil, identifiant publicitaire.</li>
@@ -79,7 +111,7 @@
         <li><strong>Données tierces</strong> : Open Food Facts et RappelConso (DGCCRF).</li>
       </ul>
 
-      <h2>2. Utilisation des données</h2>
+      <h2 id="utilisation">2. Utilisation des données</h2>
       <ul>
         <li>Afficher les informations nutritionnelles et rappels produits.</li>
         <li>Améliorer l’expérience utilisateur.</li>
@@ -87,25 +119,25 @@
         <li>Permettre les avis/commentaires.</li>
       </ul>
 
-      <h2>3. Partage des données</h2>
+      <h2 id="partage">3. Partage des données</h2>
       <p>Vos données ne sont jamais revendues. Elles peuvent être partagées avec des prestataires techniques
       ou avec des autorités légales si la loi l’exige.</p>
 
-      <h2>4. Vos droits (RGPD)</h2>
+      <h2 id="droits">4. Vos droits (RGPD)</h2>
       <p>Vous pouvez exercer vos droits d’accès, de rectification ou de suppression de vos données en nous écrivant à :
         <a href="mailto:nutriscap.app@gmail.com">nutriscap.app@gmail.com</a>.
       </p>
 
-      <h2>5. Sécurité et conservation</h2>
+      <h2 id="securite">5. Sécurité et conservation</h2>
       <p>Nous mettons en œuvre des mesures raisonnables pour protéger vos données. Elles sont conservées
       uniquement le temps nécessaire à l’usage prévu.</p>
 
-      <h2>6. Contact</h2>
+      <h2 id="contact">6. Contact</h2>
       <p>Pour toute question relative à cette politique :  
         <a href="mailto:nutriscap.app@gmail.com">nutriscap.app@gmail.com</a>.
       </p>
 
-      <h2>7. Acceptation de la politique</h2>
+      <h2 id="acceptation">7. Acceptation de la politique</h2>
       <p>En utilisant l’application <strong>NutriScap</strong>, vous reconnaissez avoir pris connaissance de la présente
       politique de confidentialité et vous acceptez ses termes.  
       Si vous n’acceptez pas ces conditions, veuillez ne pas utiliser l’application.</p>
